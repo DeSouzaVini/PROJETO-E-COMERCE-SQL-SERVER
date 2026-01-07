@@ -24,6 +24,10 @@ Este repositório contém os seguintes arquivos (clique para acessar ou baixar):
   - Chaves primárias e estrangeiras
   - Constraints (NOT NULL, UNIQUE, CHECK)
   - Relacionamentos entre entidades
+    
+⚠️ Atenção: este projeto utiliza filegroups / partition schemes nomeados.
+Antes de executar o script principal, certifique-se de criar os filegroups
+ou ajustar os nomes conforme o ambiente local.
 
 - **[`COMERCIO SQLSEVER.brM`](./COMERCIO%20SQLSEVER.brM)**  
   📥 *Download do arquivo de modelagem*  
