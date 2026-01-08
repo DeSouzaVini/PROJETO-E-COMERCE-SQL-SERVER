@@ -84,7 +84,7 @@ O banco de dados é composto pelas seguintes entidades principais:
 
 A modelagem segue boas práticas de:
 - Normalização
-- Organização relacional
+- Organização de banco relacional
 - Separação de responsabilidades entre entidades
 
 ---
