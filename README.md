@@ -1,49 +1,60 @@
 # 🛒 Projeto E-commerce – SQL Server (T-SQL)
 
 ## 📌 Descrição
-Este projeto apresenta um **banco de dados relacional para um sistema de E-commerce**, desenvolvido em **SQL Server**, utilizando **T-SQL**, com foco em:
+Este projeto consiste na **modelagem e implementação de um banco de dados relacional para um sistema de E-commerce**, desenvolvido em **Microsoft SQL Server**, utilizando **T-SQL**.
 
-- Modelagem relacional
+O foco principal está em:
+
+- Modelagem relacional 
 - Integridade referencial
 - Auditoria de dados
-- Regras de negócio
-- Estrutura corporativa de banco de dados
+- Aplicação de regras de negócio
+- Organização corporativa de banco de dados
 
-O projeto foi criado com objetivo **educacional e de portfólio**, simulando um ambiente real de vendas.
+📚 Projeto desenvolvido com finalidade **educacional e de portfólio**, simulando um ambiente real de vendas.
 
 ---
 
 ## 📂 Arquivos do Projeto
 
-Este repositório contém os seguintes arquivos (clique para acessar ou baixar):
+Este repositório contém os seguintes arquivos (clique para visualizar ou baixar):
 
+### 📄 Script SQL
 - **[`E_COMERCE.sql`](./E_COMERCE.sql)**  
   📥 *Script principal do banco de dados*  
-  Contém:
+  Inclui:
   - Criação das tabelas
-  - Chaves primárias e estrangeiras
+  - Definição de chaves primárias e estrangeiras
   - Constraints (`NOT NULL`, `UNIQUE`, `CHECK`)
-  - Relacionamentos entre entidades  
+  - Relacionamentos entre entidades
+  - Estrutura preparada para auditoria
 
-⚠️ **Atenção:** este projeto utiliza **filegroups / partition schemes nomeados**.  
-Antes de executar o script, crie os filegroups no SQL Server ou ajuste os nomes conforme seu ambiente.
+⚠️ **Atenção:**  
+Este projeto utiliza **filegroups e partition schemes nomeados**.  
+Antes da execução do script, é necessário:
+- Criar os filegroups no SQL Server  
+  **ou**
+- Ajustar os nomes das partições conforme o ambiente local
 
 ---
 
+### 🧩 Arquivo de Modelagem
 - **[`COMERCIO SQLSEVER.brM`](./COMERCIO%20SQLSEVER.brM)**  
-  📥 *Arquivo de modelagem do banco*  
+  📥 *Arquivo de modelagem lógica do banco*  
   Utilizado para:
-  - Definição do modelo lógico
-  - Visualização das entidades e relacionamentos
+  - Visualização das entidades
+  - Análise dos relacionamentos
   - Apoio ao desenvolvimento do schema SQL  
-  *(Compatível com ferramentas como brModelo)*
+
+  *(Compatível com ferramentas como **brModelo**)*
 
 ---
 
+### 🖼️ Diagrama ER
 - **[`modelagem_banco.png`](./modelagem_banco.png)**  
   📥 *Diagrama Entidade-Relacionamento (ER)*  
   Representa:
-  - Entidades
+  - Entidades do sistema
   - Atributos
   - Cardinalidades
   - Chaves primárias e estrangeiras
@@ -71,55 +82,63 @@ O banco de dados é composto pelas seguintes entidades principais:
 - **COMERCIAL**
 - **AUDITORIA_GERAL**
 
-O modelo segue boas práticas de normalização e integridade relacional.
+A modelagem segue boas práticas de:
+- Normalização
+- Organização relacional
+- Separação de responsabilidades entre entidades
 
 ---
 
 ## 🔐 Integridade e Regras de Negócio
 
-O projeto utiliza:
-- `PRIMARY KEY` para identificação única
-- `FOREIGN KEY` para relacionamento entre tabelas
-- `UNIQUE` para evitar duplicidades
-- `CHECK` para validação de domínio
-- `DEFAULT` para valores automáticos de data
+Foram aplicados os seguintes recursos do SQL Server:
+
+- `PRIMARY KEY` — Identificação única dos registros  
+- `FOREIGN KEY` — Garantia de integridade referencial  
+- `UNIQUE` — Prevenção de dados duplicados  
+- `CHECK` — Validação de domínio  
+- `DEFAULT` — Automatização de valores padrão (datas, status, etc.)
 
 ---
 
 ## 🕵️ Auditoria de Dados
 
-A tabela **AUDITORIA_GERAL** registra operações de:
+O projeto conta com a tabela **AUDITORIA_GERAL**, responsável por registrar operações de:
 
 - INSERT
 - UPDATE
 - DELETE
 
-Registrando:
+Cada registro de auditoria armazena:
 - Tabela afetada
 - ID do registro
 - Campo alterado
-- Valor antigo
-- Valor novo
+- Valor anterior
+- Novo valor
 - Tipo da operação
-- Data e hora
+- Data e hora da alteração
+
+Essa abordagem simula um **controle corporativo de alterações no banco**.
 
 ---
 
-## ⚙️ Banco de Dados
+## ⚙️ Tecnologias Utilizadas
 - **Microsoft SQL Server**
 - **T-SQL**
 
 ---
 
-## 🎯 Objetivo
+## 🎯 Objetivo do Projeto
 Demonstrar conhecimento prático em:
-- Modelagem de dados
-- SQL relacional
-- Regras de negócio
+
+- Modelagem de dados relacionais
+- SQL Server e T-SQL
+- Regras de negócio em banco de dados
 - Auditoria com triggers
-- Estrutura corporativa de banco de dados
+- Estruturação de banco em cenário corporativo
 
 ---
 
 ## 👤 Autor
-**Vinicius Souza Martins**
+**Vinicius Souza Martins**  
+Projeto desenvolvido para **estudo, prática e portfólio em Banco de Dados SQL Server**.
