@@ -82,4 +82,44 @@ O projeto utiliza:
 - `FOREIGN KEY` para relacionamento entre tabelas
 - `UNIQUE` para evitar duplicidades
 - `CHECK` para validação de domínio
-- `DEFAULT` para valores automáticos
+- `DEFAULT` para valores automáticos de data
+
+---
+
+## 🕵️ Auditoria de Dados
+
+A tabela **AUDITORIA_GERAL** registra operações de:
+
+- INSERT
+- UPDATE
+- DELETE
+
+Registrando:
+- Tabela afetada
+- ID do registro
+- Campo alterado
+- Valor antigo
+- Valor novo
+- Tipo da operação
+- Data e hora
+
+---
+
+## ⚙️ Banco de Dados
+- **Microsoft SQL Server**
+- **T-SQL**
+
+---
+
+## 🎯 Objetivo
+Demonstrar conhecimento prático em:
+- Modelagem de dados
+- SQL relacional
+- Regras de negócio
+- Auditoria com triggers
+- Estrutura corporativa de banco de dados
+
+---
+
+## 👤 Autor
+**Vinicius Souza Martins**
