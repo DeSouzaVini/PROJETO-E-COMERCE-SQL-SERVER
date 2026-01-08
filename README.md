@@ -141,4 +141,5 @@ Demonstrar conhecimento prático em:
 
 ## 👤 Autor
 **Vinicius Souza Martins**  
+
 Projeto desenvolvido para **estudo, prática e portfólio em Banco de Dados SQL Server**.
