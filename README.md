@@ -18,32 +18,43 @@ O projeto foi criado com objetivo **educacional e de portfólio**, simulando um 
 Este repositório contém os seguintes arquivos (clique para acessar ou baixar):
 
 - **[`E_COMERCE.sql`](./E_COMERCE.sql)**  
-  📥 *Download do script principal do banco de dados*  
+  📥 *Script principal do banco de dados*  
   Contém:
   - Criação das tabelas
   - Chaves primárias e estrangeiras
-  - Constraints (NOT NULL, UNIQUE, CHECK)
-  - Relacionamentos entre entidades
-    
-⚠️ Atenção: este projeto utiliza filegroups / partition schemes nomeados.
-Antes de executar o script principal, certifique-se de criar os filegroups
-ou ajustar os nomes conforme o ambiente local.
+  - Constraints (`NOT NULL`, `UNIQUE`, `CHECK`)
+  - Relacionamentos entre entidades  
+
+⚠️ **Atenção:** este projeto utiliza **filegroups / partition schemes nomeados**.  
+Antes de executar o script, crie os filegroups no SQL Server ou ajuste os nomes conforme seu ambiente.
+
+---
 
 - **[`COMERCIO SQLSEVER.brM`](./COMERCIO%20SQLSEVER.brM)**  
-  📥 *Download do arquivo de modelagem*  
+  📥 *Arquivo de modelagem do banco*  
   Utilizado para:
   - Definição do modelo lógico
   - Visualização das entidades e relacionamentos
   - Apoio ao desenvolvimento do schema SQL  
-  *(Arquivo compatível com ferramentas de modelagem como brModelo)*
+  *(Compatível com ferramentas como brModelo)*
 
-- **[`MODELAGEM DO BANCO.png`](![Modelo ER](./modelagem_banco.png)**  
-  📥 *Visualização do Diagrama Entidade-Relacionamento (ER)*  
+---
+
+- **[`modelagem_banco.png`](./modelagem_banco.png)**  
+  📥 *Diagrama Entidade-Relacionamento (ER)*  
   Representa:
   - Entidades
   - Atributos
   - Cardinalidades
   - Chaves primárias e estrangeiras
+
+---
+
+## 🗂️ Diagrama Entidade-Relacionamento
+
+Visualização direta do modelo ER:
+
+![Modelo ER](./modelagem_banco.png)
 
 ---
 
@@ -64,14 +75,6 @@ O modelo segue boas práticas de normalização e integridade relacional.
 
 ---
 
-## 🗂️ Diagrama Entidade-Relacionamento
-
-Visualização direta do diagrama ER:
-
-![Modelo ER](./MODELAGEM%20DO%20BANCO.png)
-
----
-
 ## 🔐 Integridade e Regras de Negócio
 
 O projeto utiliza:
@@ -79,46 +82,4 @@ O projeto utiliza:
 - `FOREIGN KEY` para relacionamento entre tabelas
 - `UNIQUE` para evitar duplicidades
 - `CHECK` para validação de domínio
-- `DEFAULT` para valores automáticos de data
-
----
-
-## 🕵️ Auditoria de Dados
-
-O banco possui uma tabela de auditoria chamada **AUDITORIA_GERAL**, responsável por registrar operações de:
-
-- INSERT
-- UPDATE
-- DELETE
-
-As auditorias registram:
-- Nome da tabela
-- ID do registro
-- Campo alterado
-- Valor antigo
-- Valor novo
-- Tipo de operação
-- Data e hora da modificação
-
----
-
-## ⚙️ Banco de Dados Utilizado
-- **Microsoft SQL Server**
-- Linguagem **T-SQL**
-
----
-
-## 🎯 Objetivo do Projeto
-Demonstrar conhecimento prático em:
-- Modelagem de dados
-- Criação de bancos relacionais
-- Regras de negócio em SQL
-- Auditoria via triggers
-- Estrutura de banco para sistemas de vendas
-
----
-
-## 👤 Autor
-**Vinicius Souza Martins**
-
-
+- `DEFAULT` para valores automáticos
