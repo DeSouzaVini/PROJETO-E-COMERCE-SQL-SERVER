@@ -37,7 +37,7 @@ ou ajustar os nomes conforme o ambiente local.
   - Apoio ao desenvolvimento do schema SQL  
   *(Arquivo compatível com ferramentas de modelagem como brModelo)*
 
-- **[`MODELAGEM DO BANCO.png`](./MODELAGEM%20DO%20BANCO.png)**  
+- **[`MODELAGEM DO BANCO.png`](![Modelo ER](./modelagem_banco.png)**  
   📥 *Visualização do Diagrama Entidade-Relacionamento (ER)*  
   Representa:
   - Entidades
