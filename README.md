@@ -5,7 +5,7 @@ Este projeto consiste na **modelagem e implementação de um banco de dados rela
 
 O foco principal está em:
 
-- Modelagem relacional 
+- Modelagem relacional
 - Integridade referencial
 - Auditoria de dados
 - Aplicação de regras de negócio
